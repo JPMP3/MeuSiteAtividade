@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="JS/script.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
     <!--menu para navegação-->
     <header class="header" id="topo">
-        <nav class="headerNav">
-            <ul class="navLinks">
-                <!--linkado com os titulos da pagina-->
-                <li><a href="#sobre">SOBRE MIM</a></li>
-                <li><a href="#formacao">FORMAÇÃO</a></li>
-                <li><a href="#portfolio">PORTFÓLIO</a></li>
-                <li><a href="#contato">CONTATO</a></li>
-            </ul>
-        </nav>
+        <div class="responseNav">
+            <nav class="headerNav">
+                <ul class="navLinks">
+                    <!--linkado com os titulos da pagina-->
+                    <li><a href="#sobre">SOBRE MIM</a></li>
+                    <li><a href="#formacao">FORMAÇÃO</a></li>
+                    <li><a href="#portfolio">PORTFÓLIO</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
     <main class="main">
-        <!--todo o conteudo-->
-        <a href="#topo"><img src="icons/seta-para-a-direita.png" alt="Subir pagina" class="iconSobe"></a>
-        
+        <!--todo o conteudo-->        
         <!--introdução-->
         <div class="defaultMain" id="defaultMain">
             <div class="divimg">
                 <img src="img/img.jpg" alt="Imagem do Dono do Portfólio" width="200em" height="200em" class="MinhaImg">
+                <h1>Olá,<br><strong>Sou o João Pedro.</strong></h1>
             </div>
             <section class="conteudoMain">
-                <h1><span>Olá,</span><br><strong>Sou o João Pedro.</strong></h1>
                 <p>Sou um estudante focado em virar um desenvolvedor Full-Stack. <br>Seja bem vindo ao meu Portfólio!</p>
-                <p class="dica">Navegue pelo site usando as opções no topo da página ou apenas descendo a página</p>
             </section>
+            
         </div>
 
         <!--sobre mim-->
@@ -42,16 +44,15 @@
             <p>
                 Sou um jovem de 19 anos que mora no interior de São Paulo.<br>Desde a minha adolescencia tive muito
                 muito interesse em tecnologia e arte em geral, então sempre tentei conhecer mais e mais sobre ambas as
-                áreas.<br>
+                áreas buscando uma forma de unir as mesmas.
             </p>
             <p>
                 Atualmente minhas principais atividades e hobbies envolvem:
             </p>
             <ul>
-                <li>Estudar sobre tecnologia e seu mercado.</li>
-                <li>Estudar sobre música voltado para estrumentos de corda e tocar.</li>
-                <li>Dar aulas de inglês na mesma escola de linguas que me formei</li>
-                <li>Andar de skate nas horas vagas</li>
+                <li>Estudar sobre tecnologia e seu mercado, focando no ramo de desenvolvimento.</li>
+                <li>Dar aulas de inglês na mesma escola de idiomas que me formei</li>
+                <li>Ler, praticar algum esporte e jogar nas horas vagas</li>
             </ul>
         </section>
         </div>
@@ -60,30 +61,43 @@
         <section class="formacao txtEspaco" id="formacao">
             <br>
             <h1>Formação</h1>
+            <p class="dica" style="text-align: center; font-size: .7em;">Visite o site de cada instituição clicando no nome das mesmas :)</p>
             <div class="cards">
                 <div class="cardEscola card">
-                    <img src="icons/graduacao.png" class="icons" alt="Icone representando formação academica">
-                    <h1>Ensino médio</h1>
-                    <h2><a href="https://www.cps.sp.gov.br/etecs/etec-prof-fausto-mazzola/"
-                        target="_blank" title="Visite o Site da escola">ETEC Prof. Fausto Mazzola</a></h2>
-                    <p>Ensino médio com Curso técnico<br>em desenvolvimento de jogos.</p>
+                    <a href="https://www.cps.sp.gov.br/etecs/etec-prof-fausto-mazzola/"
+                        target="_blank" title="Visite o Site da escola">
+                        <div class="linkSize">
+                            <img src="img/icons/graduacao.png" class="icons" alt="Icone representando formação academica">
+                            <h1>Ensino médio</h1>
+                            <h2>ETEC Prof. Fausto Mazzola</h2>
+                            <p>Ensino médio com Curso técnico<br>em desenvolvimento de jogos.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="cardFacul card">
-                    <img src="icons/graduacao.png" class="icons" alt="Icone representando formação academica">
-                    <h1>Ensino Superior</h1>
-                    <h2><a href="https://www.uninter.com"
-                        target="_blank" title="Visite o Site da Faculdade">Uninter</a></h2>
-                    <p>Tecnico em Analise e <br>Desenvolvimento de Sistemas.</p>
+                    <a href="https://www.uninter.com"
+                        target="_blank" title="Visite o Site da Faculdade">
+                        <div class="linkSize">
+                            <img src="img/icons/graduacao.png" class="icons" alt="Icone representando formação academica">
+                            <h1>Ensino Superior</h1>
+                            <h2>Uninter</h2>
+                            <p>Tecnico em Analise e <br>Desenvolvimento de Sistemas.</p>
+                        </div>
+                    </a>
                 </div>
+                
                 <div class="cardFacul card">
-                    <img src="icons/aprendizagem-de-idiomas.png" class="icons" alt="Icone representando formação academica">
-                    <h1>Idioma</h1>
-                    <h2><a href="https://www.wizard.com.br"
-                        target="_blank" title="Visite o Site da Escola de Idiomas">Wizard</a></h2>
-                    <p>Inglês nivel C1</p>
+                    <a href="https://www.wizard.com.br" target="_blank" title="Visite o Site da Escola de Idiomas">
+                        <div class="linkSize">
+                            <img src="img/icons/aprendizagem-de-idiomas.png" class="icons" alt="Icone representando formação academica">
+                            <h1>Idioma</h1>
+                            <h2>Wizard</h2>
+                            <p>Inglês nivel C1</p>
+                        </div>
+                    </a>
                 </div>
+                
             </div>
-            <p class="dica" style="text-align: center;">(Visite o site de cada instituição clicando no nome das mesmas)</p>
         </section>
 
         <!--portfolio-->
@@ -91,18 +105,21 @@
             <h1>Portfólio</h1>
             <p>Sem muita informação por aqui no momento :( <br> acesse o meu GitHub!</p>
             <a href="https://github.com/JPMP3" target="_blank" rel="noopener noreferrer"><strong>CLIQUE EM MIM</strong></a>
-            <img src="icons/computador.png" class="quebrado">
+            <img src="img/icons/computador.png" class="quebrado">
         </section>
     </main>
-
+    <!--botão para subir a pag-->
+    <div id="upBtn" style="height: 3.5em; width: 3.5em;">
+        <i class="iconSobe"></i>
+    </div>      
     <!--contatos no footer-->
     <footer class="footer">
         <section class="contato txtEspaco" id="contato">
             <h1>Contatos</h1>
             <div class="cards">
-                <div class="cardEscola card">
+                <div class="">
                     <a href="https://www.instagram.com/0jp.mp3/"
-                        target="_blank" title="Visite o Site da escola"><img src="icons/instagram.png" class="icons" alt=""></a></h2>
+                        target="_blank" title="Visite o Site da escola"><img src="img/icons/instagram.png" class="icons" alt=""></a></h2>
                 </div>
                 </div>
             </div>

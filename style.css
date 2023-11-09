@@ -1,110 +1,279 @@
-body{
-    
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: .9em;
+}
+body{ 
     color: rgb(197, 182, 247);
     background: rgb(15,0,36);
     background: linear-gradient(180deg, rgba(15,0,36,1) 30%, rgb(40, 2, 63) 70%, rgb(15,0,36,1) 100%);
     font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
 }
-.header{
-    padding-top: 2em;
-    padding-right: 3em;
-    text-align: right;
-    color: rgb(197, 182, 247);
-    
-}
-h1{
-    color: rgb(212, 210, 221);
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-a{
-    text-decoration: none;
-    color: rgb(197, 182, 247);
-    margin: 1.6em;
-}
-.navLinks{
-    display: inline-flex;
-    padding: 0;
-    list-style: none;
-}
-.divimg{
-    display: flex;
-    margin: 0em 2em 2em 5em;
-}
-.MinhaImg{
-    border-radius: 48%;
-    border: .15em solid rgb(255, 255, 255);
-    box-shadow: -.2em -.1em .8em rgba(135, 99, 255, 0.798);
-}
-.defaultMain{
-    margin-top: 3em;
-    display: flex;
-    font-size: 1.7em;
-    padding: 6em auto;
-    
-}
-.conteudoMain{
+@media only screen and (max-width: 700px) {
+    .header{
+        padding-top: 2em;
+        color: rgb(197, 182, 247);
+        display: flex;
+    }
+    h1{
+        color: rgb(212, 210, 221);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(197, 182, 247);
+        
+    }
+    .responseNav{
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .navLinks{
+        display: inline-flex;
+        padding: 0;
+        list-style: none;
 
-    padding:0em 3em 5em 0em;
-    text-align: justify;
+    }
+    .navLinks>li{
+        margin: 0px .7em 0px .7em;
+        text-align: center;
+        
+    }
+    .navLinks > a{
+        text-align: justify;
+    }
+    
+    /*Main*/
+
+    .divimg{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        height: 7em;
+    }
+    .divimg > h1{
+        margin: 3em 0px 2em .8em;
+        font-size: 1.3em;
+    }
+    .MinhaImg{
+        width: 7em;
+        height: 7em;
+        border-radius: 48%;
+        border: .15em solid rgb(208, 173, 244);
+        box-shadow: -.2em -.1em .8em rgba(135, 99, 255, 0.798);
+    }
+    .defaultMain{
+        margin: 2.5em 1.2em 0px 1.2em;
+        display: flexbox;
+    }
+    .conteudoMain{
+        text-align: justify;
+    }
+    .txtEspaco{
+        padding: 0em 3em 3em 3em;
+        margin-top: 3em;
+        font-size: 1.8em;
+        text-align: justify;
+    }
+    .icons{
+        width: 3em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        border: .6em solid white;
+    }
+    .iconSobe{
+        width: 4em;
+        display: flex;
+        background-color: white;
+        border-radius: 50%;
+        border: .3em solid white;
+        rotate: -90deg;
+        position: fixed;
+        right: 2em;
+        bottom: 2em;
+    }
+    .cards h1{
+        font-size: .7em;
+        font-weight: bold;
+    }
+    .cards h2{
+        font-size: .7em;
+    }
+    .cards p{
+        font-size: .5em;
+    }
+    .cards img{
+        font-size: .7em;
+        margin-right: 1em;
+    }
+    .cards{
+        display: flex;
+    }
+    .cards a{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        margin: 2em auto;
+    }
+    .portfolio{
+        font-size: large;
+    }
+    .quebrado{
+        width: 4em;
+        background-color: rgb(255, 255, 255);
+        border: .2em solid white;
+    }    
 }
-.dica{
-    color: rgb(170, 170, 170);
-    display: flex;
-    font-size: 0.5em;
-}
-.txtEspaco{
-    padding: 0em 3em 3em 3em;
-    margin-top: 3em;
-    font-size: 1.8em;
-    text-align: justify;
-}
-.icons{
-    width: 3em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border: .6em solid white;
-}
-.iconSobe{
-    width: 4em;
-    display: flex;
-    background-color: white;
-    border-radius: 50%;
-    border: .3em solid white;
-    rotate: -90deg;
-    position: fixed;
-    right: 2em;
-    bottom: 2em;
-}
-.cards h1{
-    font-size: .7em;
-    font-weight: bold;
-}
-.cards h2{
-    font-size: .7em;
-}
-.cards p{
-    font-size: .5em;
-}
-.cards img{
-    font-size: .7em;
-    margin-right: 1em;
-}
-.cards{
-    display: flex;
-}
-.cards a{
-    padding: 0;
-    margin: 0;
-}
-.card{
-    margin: 2em auto;
-}
-.portfolio{
-    font-size: large;
-}
-.quebrado{
-    width: 4em;
-    background-color: rgb(255, 255, 255);
-    border: .2em solid white;
+@media (min-width: 701px){
+    .header{
+        padding-top: 2em;
+        padding-right: 3em;
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(197, 182, 247);   
+    }
+    h1{
+        color: rgb(212, 210, 221);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(197, 182, 247);
+        margin: 1.6em;
+    }
+    .navLinks{
+        display: inline-flex;
+        padding: 0;
+        list-style: none;
+    }
+    .navLinks > li:hover{
+        transform: scale(1.1);
+    }
+    .divimg{
+        box-sizing: border-box;
+        display: flex;
+        margin: 0em 2em 2em 5em;
+    }
+    .divimg > h1{
+        padding-top: 1.4em;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .MinhaImg{
+        border-radius: 48%;
+        border: .15em solid rgb(255, 255, 255);
+        margin-right: 3em;
+        box-shadow: -.2em -.1em .8em rgba(135, 99, 255, 0.798);
+    }
+    .defaultMain{
+        margin: 3em 0em 4em 0em;
+        display: flexbox;
+        font-size: 1.7em;
+        padding: 6em auto;
+        
+    }
+    .conteudoMain{
+        text-align: justify;
+    }
+    .conteudoMain > p{
+        padding: 0em 2em 0em 5em;
+    }
+    .txtEspaco{
+        padding: 0em 3em 3em 3em;
+        margin-top: 3em;
+        font-size: 1.8em;
+        text-align: justify;
+    }
+    .sobre > ul > li {
+        text-align: left;
+        margin-top: .5em;
+    }
+    .icons{
+        width: 3em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        border: .6em solid white;
+    }
+    .iconSobe{
+        border: solid rgb(54, 0, 82);
+        border-width: 0 9px 9px 0;
+        padding: 7px;
+        transform: rotate(-45deg);
+    }
+    #upBtn{
+        width: 3em;
+        height: 3em;
+        background-color: rgb(255, 231, 255);
+        border-radius: 50%;
+        border: .3em solid rgb(255, 231, 255);
+        rotate: -90deg;
+        position: fixed;
+        right: 2em;
+        justify-content: center;
+        box-sizing: border-box;
+        bottom: 2em;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+    }
+    .cards h1{
+        font-size: .7em;
+        font-weight: bold;
+    }
+    .cards h2{
+        font-size: .7em;
+    }
+    .cards p{
+        font-size: .5em;
+    }
+    .cards img{
+        font-size: .7em;
+        margin-right: 1em;
+    }
+    .cards{
+        box-sizing: border-box;
+        max-width: 30em;
+        display: flex;
+    }
+    .cards a{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        background-color: rgb(95, 4, 140);
+        opacity: 70%;
+        box-sizing: border-box;
+        border-radius: 30px;
+        width: 10em;
+        height: 12em;
+        text-align: left;
+        margin: 2em 1em;
+        padding: .5em 0em .5em .5em;
+    }
+    .linkSize{
+        height: 100%;
+    }
+    .card > a {
+        width: 50em;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+    .quebrado{
+        width: 4em;
+        background-color: rgb(255, 255, 255);
+        border: .2em solid white;
+    }    
+    
 }
