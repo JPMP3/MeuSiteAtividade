@@ -11,6 +11,15 @@ body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(59, 5, 93);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(40, 2, 63);
+    border-radius: 6px;
+    height: 1.5em;
+}
 @media only screen and (max-width: 700px) {
     .header{
         padding-top: 2em;
@@ -238,9 +247,11 @@ body{
         margin-right: 1em;
     }
     .cards{
+        justify-content: space-evenly;
         box-sizing: border-box;
-        max-width: 30em;
         display: flex;
+        width: 100%;
+        flex-wrap: wrap;
     }
     .cards a{
         padding: 0;
@@ -251,11 +262,12 @@ body{
         opacity: 70%;
         box-sizing: border-box;
         border-radius: 30px;
-        width: 10em;
-        height: 12em;
+        width: 9em;
+        height: 11em;
+        margin: .8em .45em;
         text-align: left;
-        margin: 2em 1em;
-        padding: .5em 0em .5em .5em;
+        padding: .5em .3em .5em .8em;
+        box-shadow: .4em .3em .4em rgb(14, 0, 41);
     }
     .linkSize{
         height: 100%;
@@ -269,11 +281,39 @@ body{
     .card:hover{
         transform: scale(1.1);
         opacity: 100%;
+        box-shadow: 1em .9em .9em rgb(14, 0, 41);
+    }
+    .btnAcessa{
+        background-color: rgb(183, 0, 255);
+        width: 4em;
+        height: 1.5em;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 10px;
+        margin: 2em 3em 0em 1.8em;
+        align-content: center;
+        list-style: none;
+    }
+    .btnAcessa > a {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .btnAcessa:hover{
+        transform: scale(1.1);
+        background-color: rgb(58, 1, 81);
+    }
+    .divPort{
+        text-align: center;
     }
     .quebrado{
         width: 4em;
         background-color: rgb(255, 255, 255);
         border: .2em solid white;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        display: flex;
+        
     }    
     
 }

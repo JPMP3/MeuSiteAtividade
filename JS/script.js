@@ -1,7 +1,6 @@
+//Botão para subir a pag
 window.onload = function(){
     const btn = document.getElementById('upBtn');
-
-
 
     btn.addEventListener('click', function(){
         console.log('subiu');
@@ -19,6 +18,6 @@ window.onload = function(){
         }
     }
 
-    hideBtn()    
+    hideBtn()
 }
 
